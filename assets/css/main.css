@@ -164,7 +164,7 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 .badge.looker {
-  top: 160px;
+  top: 80px;
   left: -60px;
   border-left: 4px solid #f59e0b;
   animation-delay: 3s;
@@ -172,7 +172,7 @@ body {
 
 .badge.automation {
   top: 120px;
-  left: 40%;
+  left: -40%;
   transform: translateX(-50%);
   border-left: 4px solid #8b5cf6;
   animation-delay: 4s;
@@ -187,7 +187,7 @@ body {
 
 .badge.communication {
   bottom: 90px;
-  left: 20%;
+  left: -20%;
   border-left: 4px solid #10b981;
   animation-delay: 6s;
 }
