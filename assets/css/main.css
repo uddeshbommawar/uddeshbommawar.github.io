@@ -1,3 +1,7 @@
+/* ================================
+   Reset & Base
+   ================================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +13,10 @@ body {
   background: #ffffff;
   color: #111;
 }
+
+/* ================================
+   Hero Layout
+   ================================ */
 
 .hero {
   padding: 80px 8%;
@@ -39,6 +47,10 @@ body {
   gap: 16px;
 }
 
+/* ================================
+   Buttons
+   ================================ */
+
 .btn {
   padding: 12px 22px;
   border-radius: 999px;
@@ -56,85 +68,51 @@ body {
   color: #000;
 }
 
+/* ================================
+   Hero Right
+   ================================ */
+
 .hero-right {
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
+
+/* ================================
+   Image + Side Floating Columns
+   ================================ */
 
 .image-wrapper {
-  position: relative;
-  max-width: 420px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
-.image-wrapper img {
-  width: 100%;
-  border-radius: 16px;
-}
-
-.badge {
-  position: absolute;
-  background: #fff;
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-size: 0.75rem;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.badge.error {
-  top: 10%;
-  right: -20px;
-  border-left: 4px solid #ff4d4f;
-}
-
-.badge.barcode {
-  bottom: 30%;
-  left: -30px;
-  border-left: 4px solid #1677ff;
-}
-
-.badge.grammar {
-  bottom: 10%;
-  right: -10px;
-  border-left: 4px solid #52c41a;
-}
 /* ================================
-   Profile Image – Premium Hover
+   Floating Columns
+   ================================ */
+
+.floating-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.floating-column.left {
+  align-items: flex-end;
+}
+
+.floating-column.right {
+  align-items: flex-start;
+}
+
+/* ================================
+   Profile Image
    ================================ */
 
 .profile-photo {
-  max-width: 420px;
+  max-width: 380px;
   height: auto;
   display: block;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-photo:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
-}
-
-@media (max-width: 768px) {
-  .profile-photo {
-    max-width: 280px;
-    margin: 0 auto;
-  }
-}
-/* ================================
-   Image Wrapper (Anchor Element)
-   ================================ */
-
-.image-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-/* ================================
-   Profile Image (already used)
-   ================================ */
-
-.profile-photo {
-  max-width: 420px;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -146,99 +124,61 @@ body {
 }
 
 /* ================================
-   Floating Badges (Base)
+   Floating Badges
    ================================ */
 
 .badge {
-  position: absolute;
   background: #ffffff;
-  padding: 8px 14px;
+  padding: 10px 16px;
   border-radius: 999px;
-  font-size: 13px;
+  font-size: 0.75rem;
   font-weight: 500;
   white-space: nowrap;
-  z-index: 10;
-
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
-
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   animation: float 3s ease-in-out infinite;
 }
-.badge.looker {
-  top: 80px;
-  left: -60px;
-  border-left: 4px solid #f59e0b;
-  animation-delay: 3s;
-}
 
-.badge.automation {
-  top: 120px;
-  left: -40%;
-  transform: translateX(-50%);
-  border-left: 4px solid #8b5cf6;
-  animation-delay: 4s;
-}
+/* Accent Colors */
 
-.badge.data {
-  bottom: 80px;
-  right: -60px;
-  border-left: 4px solid #0ea5e9;
-  animation-delay: 5s;
-}
+.badge.looker { border-left: 4px solid #f59e0b; }
+.badge.sem { border-left: 4px solid #1677ff; }
+.badge.communication { border-left: 4px solid #10b981; }
 
-.badge.communication {
-  bottom: 90px;
-  left: -20%;
-  border-left: 4px solid #10b981;
-  animation-delay: 6s;
-}
-
-/* ================================
-   Badge Positions
-   ================================ */
-
-.badge.error {
-  top: 60px;
-  right: -40px;
-  border-left: 4px solid #ef4444;
-  animation-delay: 0s;
-}
-
-.badge.barcode {
-  bottom: 140px;
-  left: -40px;
-  border-left: 4px solid #3b82f6;
-  animation-delay: 1s;
-}
-
-.badge.grammar {
-  bottom: 40px;
-  right: -30px;
-  border-left: 4px solid #22c55e;
-  animation-delay: 2s;
-}
+.badge.seo { border-left: 4px solid #ef4444; }
+.badge.automation { border-left: 4px solid #8b5cf6; }
+.badge.data { border-left: 4px solid #0ea5e9; }
+.badge.smm { border-left: 4px solid #22c55e; }
 
 /* ================================
    Floating Animation
    ================================ */
 
 @keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
 }
 
 /* ================================
-   Mobile Safety
+   Mobile Handling
    ================================ */
 
 @media (max-width: 768px) {
-  .badge {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    flex-direction: column;
+  }
+
+  .floating-column {
     display: none;
+  }
+
+  .profile-photo {
+    max-width: 280px;
+    margin: 0 auto;
   }
 }
