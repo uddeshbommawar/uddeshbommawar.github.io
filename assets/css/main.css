@@ -120,3 +120,97 @@ body {
     margin: 0 auto;
   }
 }
+/* ================================
+   Image Wrapper (Anchor Element)
+   ================================ */
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* ================================
+   Profile Image (already used)
+   ================================ */
+
+.profile-photo {
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
+}
+
+/* ================================
+   Floating Badges (Base)
+   ================================ */
+
+.badge {
+  position: absolute;
+  background: #ffffff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 10;
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ================================
+   Badge Positions
+   ================================ */
+
+.badge.error {
+  top: 60px;
+  right: -40px;
+  border-left: 4px solid #ef4444;
+  animation-delay: 0s;
+}
+
+.badge.barcode {
+  bottom: 140px;
+  left: -40px;
+  border-left: 4px solid #3b82f6;
+  animation-delay: 1s;
+}
+
+.badge.grammar {
+  bottom: 40px;
+  right: -30px;
+  border-left: 4px solid #22c55e;
+  animation-delay: 2s;
+}
+
+/* ================================
+   Floating Animation
+   ================================ */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   Mobile Safety
+   ================================ */
+
+@media (max-width: 768px) {
+  .badge {
+    display: none;
+  }
+}
