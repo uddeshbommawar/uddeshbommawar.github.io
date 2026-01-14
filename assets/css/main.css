@@ -163,6 +163,34 @@ body {
 
   animation: float 3s ease-in-out infinite;
 }
+.badge.looker {
+  top: 160px;
+  left: -60px;
+  border-left: 4px solid #f59e0b;
+  animation-delay: 3s;
+}
+
+.badge.automation {
+  top: 20px;
+  left: 40%;
+  transform: translateX(-50%);
+  border-left: 4px solid #8b5cf6;
+  animation-delay: 4s;
+}
+
+.badge.data {
+  bottom: 200px;
+  right: -60px;
+  border-left: 4px solid #0ea5e9;
+  animation-delay: 5s;
+}
+
+.badge.communication {
+  bottom: 90px;
+  left: 20%;
+  border-left: 4px solid #10b981;
+  animation-delay: 6s;
+}
 
 /* ================================
    Badge Positions
