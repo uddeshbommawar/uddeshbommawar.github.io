@@ -27,7 +27,10 @@ description: Personal SEO lab by Uddesh Bommawar focused on technical SEO, conte
 
   <div class="hero-right">
     <div class="image-wrapper">
-      <img src="/assets/css/profile.png" alt="Uddesh Bommawar SEO profile">
+      <img 
+  src="{{ site.baseurl }}/assets/images/profile.png"
+  alt="Uddesh Bommawar SEO profile"
+  class="profile-photo">
 
       <span class="badge error">Error<br>Allergen missing</span>
       <span class="badge barcode">Enable Barcode Check</span>
