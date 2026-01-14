@@ -8,15 +8,13 @@ description: Personal SEO lab by Uddesh Bommawar focused on technical SEO, conte
 
   <div class="hero-left">
     <h1>
-      Building SEO<br>
-      by testing, learning<br>
-      and publishing
+      Learning SEO<br>
+      by Testing, Refining,<br>
+      and Publishing
     </h1>
 
     <p>
-      A personal SEO and performance marketing lab documenting
-      experiments in technical SEO, content optimization,
-      Core Web Vitals, and Google Ads.
+      A results-driven digital marketing professional with hands-on experience in SEO, specializing in website optimization and driving sustainable organic traffic and revenue growth for both B2B and B2C brands. Strong expertise across technical SEO, on-page optimization, content strategy, and search performance analysis, with a data-driven approach to improving search visibility and rankings. Currently focused on building automation across SEO workflows and reporting to improve efficiency and scalability. Actively leveraging Python and AI to streamline time-intensive SEO tasks, accelerate insights, and enable faster, more accurate decision-making.
     </p>
 
     <div class="hero-cta">
