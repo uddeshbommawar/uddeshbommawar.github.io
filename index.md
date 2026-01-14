@@ -28,7 +28,7 @@ description: Personal SEO lab by Uddesh Bommawar focused on technical SEO, conte
   <div class="hero-right">
     <div class="image-wrapper">
 <img
-  src="{{ site.baseurl }}/assets/images/profile.jpg"
+  src="{{ site.baseurl }}/assets/css/profile.png"
   alt="Uddesh Bommawar SEO profile"
   class="profile-photo">
 
