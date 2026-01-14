@@ -27,6 +27,15 @@ description: Personal SEO lab by Uddesh Bommawar focused on technical SEO, conte
 
   <div class="hero-right">
     <div class="image-wrapper">
+
+      <!-- LEFT SIDE ELEMENTS -->
+      <div class="floating-column left">
+        <span class="badge looker">Looker Studio</span>
+        <span class="badge barcode">Search Engine Marketing</span>
+        <span class="badge communication">Client Communication</span>
+      </div>
+
+      <!-- IMAGE -->
       <img
         src="/assets/images/profile.png"
         alt="Uddesh Bommawar SEO profile"
@@ -34,13 +43,14 @@ description: Personal SEO lab by Uddesh Bommawar focused on technical SEO, conte
         loading="eager"
         fetchpriority="high">
 
-      <span class="badge error">Search Engine Optimization</span>
-      <span class="badge barcode">Search Engine Marketing</span>
-      <span class="badge grammar">Social Media Marketing</span>
-      <span class="badge looker">Looker Studio</span>
-      <span class="badge automation">SEO Automation</span>
-      <span class="badge data">Data Analysis</span>
-      <span class="badge communication">Client Communication</span>
+      <!-- RIGHT SIDE ELEMENTS -->
+      <div class="floating-column right">
+        <span class="badge error">Search Engine Optimization</span>
+        <span class="badge automation">SEO Automation</span>
+        <span class="badge data">Data Analysis</span>
+        <span class="badge grammar">Social Media Marketing</span>
+      </div>
+
     </div>
   </div>
 
