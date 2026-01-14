@@ -34,9 +34,9 @@ description: Personal SEO lab by Uddesh Bommawar focused on technical SEO, conte
         loading="eager"
         fetchpriority="high">
 
-      <span class="badge error">Error<br>Allergen missing</span>
-      <span class="badge barcode">Enable Barcode Check</span>
-      <span class="badge grammar">Enable Grammar Check</span>
+      <span class="badge error">Search Engine Optimization</span>
+      <span class="badge barcode">Search Engine Marketing</span>
+      <span class="badge grammar">Social Media Marketing</span>
       <span class="badge looker">Looker Studio</span>
       <span class="badge automation">SEO Automation</span>
       <span class="badge data">Data Analysis</span>
