@@ -171,7 +171,7 @@ body {
 }
 
 .badge.automation {
-  top: 20px;
+  top: 120px;
   left: 40%;
   transform: translateX(-50%);
   border-left: 4px solid #8b5cf6;
@@ -179,7 +179,7 @@ body {
 }
 
 .badge.data {
-  bottom: 200px;
+  bottom: 80px;
   right: -60px;
   border-left: 4px solid #0ea5e9;
   animation-delay: 5s;
