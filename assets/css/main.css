@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Nunito", sans-serif;
   background: #ffffff;
   color: #111;
 }
@@ -16,7 +16,7 @@ body {
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
   gap: 50px;
   align-items: center;
 }
@@ -29,7 +29,7 @@ body {
 
 .hero-left p {
   font-size: 1.05rem;
-  color: #444;
+  color: #0d1117;
   max-width: 560px;
   margin-bottom: 32px;
 }
