@@ -96,3 +96,27 @@ body {
   right: -10px;
   border-left: 4px solid #52c41a;
 }
+/* ================================
+   Profile Image – Premium Hover
+   ================================ */
+
+.profile-photo {
+  max-width: 420px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
