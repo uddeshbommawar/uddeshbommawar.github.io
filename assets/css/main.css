@@ -48,20 +48,64 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 12px 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 26px;
   border-radius: 999px;
   text-decoration: none;
   font-size: 0.95rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease,
+    color 0.15s ease;
 }
+
+/* Primary button */
 
 .btn.primary {
   background: #000;
   color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+.hero-cta .btn.primary {
+  font-weight: 600;
 }
 
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.btn.primary:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* Secondary button */
+
 .btn.secondary {
-  border: 1px solid #000;
+  background: #fff;
   color: #000;
+  border: 1.5px solid #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.btn.secondary:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.btn.secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
 }
 
 .hero-right {
