@@ -26,7 +26,7 @@ body {
   align-items: center;
 
   padding-left: 24px;   /* ⬅️ pushes text right */
-  padding-right: 24px;  /* ⬅️ pushes image right */
+  padding-right: 50px;  /* ⬅️ pushes image right */
 }
 
 .hero-left h1 {
