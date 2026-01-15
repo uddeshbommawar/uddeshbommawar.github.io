@@ -17,7 +17,7 @@ description: Personal SEO lab by Uddesh Bommawar focused on technical SEO, conte
     <p>Currently focused on building automation across SEO workflows and reporting to improve efficiency and scalability. Actively leveraging Python and AI to streamline time-intensive SEO tasks, accelerate insights, and enable faster, more accurate decision-making.</p>
 
     <div class="hero-cta">
-      <a href="/blog/" class="btn primary">View Latest Blogs</a>
+      <a href="/blog/" class="btn primary">View Latest Blog</a>
       <a href="/portfolio/" class="btn secondary">View Portfolio</a>
     </div>
   </div>
