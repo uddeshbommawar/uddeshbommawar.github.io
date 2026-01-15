@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .badge.data {
   top: 250px;
-  right: -40px;
+  right: -60px;
   border-left: 4px solid #0ea5e9;
   animation-delay: 3s;
 }
@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .badge.grammar {
   bottom: 40px;
-  right: -200px;
+  right: -100px;
   border-left: 4px solid #22c55e;
   animation-delay: 3s;
 }
