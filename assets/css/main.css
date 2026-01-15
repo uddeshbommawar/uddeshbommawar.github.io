@@ -34,14 +34,6 @@ h1, h2, h3, h4, h5, h6 {
     #eeecff,
     #ffffff 46%
   );
-  background-size: 200% 200%;
-  animation: heroGradient 20s ease infinite;
-}
-
-@keyframes heroGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 .hero-container {
