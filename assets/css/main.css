@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  padding: 80px 8%;
+  padding: 56px 8%;
 }
 
 .hero-container {
@@ -106,9 +106,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-nav a {
   font-family: "Rubik", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.95rem;     /* ⬅️ slightly bigger */
+  font-weight: 500;      /* ⬅️ bolder */
   text-decoration: none;
-  color: #444;
+  color: #333;
   transition: color 0.15s ease;
 }
 
