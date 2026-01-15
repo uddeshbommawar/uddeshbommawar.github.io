@@ -183,23 +183,22 @@ body {
 .badge.automation {
   top: 120px;
   left: -40%;
-  transform: translateX(-50%);
   border-left: 4px solid #8b5cf6;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .badge.data {
   bottom: 80px;
   right: -60px;
   border-left: 4px solid #0ea5e9;
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 
 .badge.communication {
-  bottom: 90px;
-  left: -20%;
+  bottom: 80px;
+  left: -40%;
   border-left: 4px solid #10b981;
-  animation-delay: 6s;
+  animation-delay: 3s;
 }
 
 /* ================================
@@ -210,21 +209,21 @@ body {
   top: 60px;
   right: -40px;
   border-left: 4px solid #ef4444;
-  animation-delay: 0s;
+  animation-delay: 3s;
 }
 
 .badge.barcode {
   bottom: 140px;
   left: -40px;
   border-left: 4px solid #3b82f6;
-  animation-delay: 1s;
+  animation-delay: 3s;
 }
 
 .badge.grammar {
   bottom: 40px;
   right: -30px;
   border-left: 4px solid #22c55e;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 /* ================================
