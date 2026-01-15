@@ -182,14 +182,14 @@ body {
 
 .badge.automation {
   top: 220px;
-  left: -40%;
+  left: -30%;
   border-left: 4px solid #8b5cf6;
   animation-delay: 5s;
 }
 
 .badge.data {
-  bottom: 80px;
-  right: -60px;
+  top: 250px;
+  right: -40px;
   border-left: 4px solid #0ea5e9;
   animation-delay: 3s;
 }
