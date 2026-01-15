@@ -27,22 +27,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  /* First-fold sizing */
   min-height: 100vh;
   max-height: 900px;
 
-  /* Responsive vertical spacing */
-  padding: clamp(96px, 12vh, 140px) 8% clamp(64px, 10vh, 96px);
+  /* ⬇️ slightly tighter top spacing */
+  padding: clamp(80px, 10vh, 120px) 8% clamp(64px, 10vh, 96px);
+  margin-top: -64px;
 
-  /* Gradient background */
   background-image: linear-gradient(
     77deg,
     #eeecff,
     #ffffff 46%
   );
-
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .hero-container {
