@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-right {
   display: flex;
   justify-content: flex-start; /* ⬅️ aligns image inward */
-  padding-left: 20px;          /* ⬅️ subtle right shift */
+  padding-left: 50px;          /* ⬅️ subtle right shift */
 }
 
 .image-wrapper {
