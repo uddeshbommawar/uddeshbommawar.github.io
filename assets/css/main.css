@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .badge.grammar {
   bottom: 40px;
-  right: -100px;
+  right: -150px;
   border-left: 4px solid #22c55e;
   animation-delay: 3s;
 }
