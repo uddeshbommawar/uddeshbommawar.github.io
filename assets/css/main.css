@@ -181,7 +181,7 @@ body {
 }
 
 .badge.automation {
-  top: 160px;
+  top: 190px;
   left: -40%;
   border-left: 4px solid #8b5cf6;
   animation-delay: 5s;
@@ -221,7 +221,7 @@ body {
 
 .badge.grammar {
   bottom: 40px;
-  right: -120px;
+  right: -160px;
   border-left: 4px solid #22c55e;
   animation-delay: 3s;
 }
