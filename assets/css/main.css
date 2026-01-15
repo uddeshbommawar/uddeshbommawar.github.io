@@ -27,24 +27,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  padding: 120px 8% 80px; /* extra top space for header */
-  margin-top: -80px;     /* hero slides under header */
+  /* First-fold sizing */
+  min-height: 100vh;
+  max-height: 900px;
 
+  /* Responsive vertical spacing */
+  padding: clamp(96px, 12vh, 140px) 8% clamp(64px, 10vh, 96px);
+
+  /* Gradient background */
   background-image: linear-gradient(
     77deg,
     #eeecff,
     #ffffff 46%
   );
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 72px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   align-items: center;
 
-  padding-left: 24px;   /* ⬅️ pushes text right */
-  padding-right: 50px;  /* ⬅️ pushes image right */
+  gap: clamp(32px, 5vw, 64px);
 }
 
 .hero-left h1 {
@@ -93,7 +99,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   z-index: 100;
 
-  /* Glass effect without white band */
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -260,11 +265,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .profile-photo {
   max-width: 420px;
+  max-height: 520px;
+  width: auto;
   height: auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-photo:hover {
@@ -410,3 +413,23 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 0% 50%;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 96px 6% 64px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-right {
+    order: -1;
+    margin-bottom: 24px;
+  }
+
+  .profile-photo {
+    max-height: 360px;
+  }
+}
+
