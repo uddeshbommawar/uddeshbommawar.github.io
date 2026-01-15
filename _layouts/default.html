@@ -11,20 +11,41 @@
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-  <!-- ✅ LOAD CSS -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header class="hero">
-    {{ content }}
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+
+      <!-- Logo / Name -->
+      <a href="{{ site.baseurl }}/" class="site-logo">
+        Uddesh Bommawar
+      </a>
+
+      <!-- Navigation -->
+      <nav class="site-nav">
+        <a href="{{ site.baseurl }}/blog/">Blogs</a>
+        <a href="{{ site.baseurl }}/portfolio/">Portfolio</a>
+        <a href="{{ site.baseurl }}/experiments/">Experiments</a>
+        <a href="{{ site.baseurl }}/contact/">Contact</a>
+      </nav>
+
+    </div>
   </header>
+
+  <!-- Page Content (Hero, etc.) -->
+  <main class="hero">
+    {{ content }}
+  </main>
 
 </body>
 </html>
