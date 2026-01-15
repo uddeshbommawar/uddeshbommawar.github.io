@@ -21,9 +21,12 @@ body {
 
 .hero-container {
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
   align-items: center;
+
+  padding-left: 24px;   /* ⬅️ pushes text right */
+  padding-right: 24px;  /* ⬅️ pushes image right */
 }
 
 .hero-left h1 {
@@ -62,7 +65,9 @@ body {
 }
 
 .hero-right {
-  position: relative;
+  display: flex;
+  justify-content: flex-start; /* ⬅️ aligns image inward */
+  padding-left: 20px;          /* ⬅️ subtle right shift */
 }
 
 .image-wrapper {
