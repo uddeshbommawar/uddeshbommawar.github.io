@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  padding: 56px 8%;
+  padding: 45px 8%;
 }
 
 .hero-container {
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 24px; /* ⬅️ reduced vertical padding */
+  padding: 10px 24px; /* ⬅️ reduced vertical padding */
 
   display: flex;
   align-items: center;
