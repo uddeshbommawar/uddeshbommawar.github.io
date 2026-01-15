@@ -27,7 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  padding: 80px 8%;
+  padding: 120px 8% 80px; /* extra top space for header */
+  margin-top: -80px;     /* hero slides under header */
 
   background-image: linear-gradient(
     77deg,
@@ -90,9 +91,12 @@ h1, h2, h3, h4, h5, h6 {
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(8px);
   z-index: 100;
+
+  /* Glass effect without white band */
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header-container {
