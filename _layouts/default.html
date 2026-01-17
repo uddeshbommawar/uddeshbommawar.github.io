@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5BGMC455');</script>
-<!-- End Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5BGMC455');</script>
+  <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
 
@@ -27,128 +27,95 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
   <meta name="google-site-verification" content="A7NtwOPHCNvu1Hbgps2-rGwtBqIUABEtZSAsjmdNK8c" />
-<style>
-  /* Basic nav */
-  .site-nav {
-    display: flex;
-    gap: 26px;
-    align-items: center;
-  }
 
-  /* Links + button look same */
-  .nav-link {
-    position: relative;
-    font-size: 16px;
-    font-weight: 600;
-    color: #111;
-    text-decoration: none;
-    padding: 8px 2px;
-  }
-
-  .nav-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-  }
-
-  /* Underline hover effect */
-  .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    height: 2px;
-    width: 0%;
-    background: #111;
-    transition: width 0.25s ease;
-  }
-
-  .nav-link:hover::after {
-    width: 100%;
-  }
-
-  /* Dropdown container */
-  .nav-item {
-    position: relative;
-  }
-
-  /* Dropdown menu hidden by default */
-  .dropdown {
-    display: none;
-    position: absolute;
-    top: 42px;
-    left: 0;
-    min-width: 230px;
-    background: #fff;
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
-    padding: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
-    z-index: 1000;
-  }
-
-  /* Dropdown show when active */
-  .dropdown.active {
-    display: block;
-  }
-
-  .dropdown-link {
-    display: block;
-    padding: 10px 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-  }
-
-  .dropdown-link:hover {
-    background: #f5f5f5;
-  }
-</style>
   <style>
-  /* underline effect for ALL nav links */
-  nav a {
-    position: relative;
-    text-decoration: none;
-    color: #111;
-    padding: 8px 2px;
-    font-weight: 600;
-  }
+    /* Basic nav layout */
+    .site-nav {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+    }
 
-  nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    height: 2px;
-    width: 0%;
-    background: #111;
-    transition: width 0.25s ease;
-  }
+    /* Nav links + button look same */
+    .nav-link {
+      position: relative;
+      font-size: 16px;
+      font-weight: 500; /* not bold */
+      color: #111;
+      text-decoration: none;
+      padding: 8px 2px;
+    }
 
-  nav a:hover::after {
-    width: 100%;
-  }
-</style>
-  <style>
-  /* Make all nav links normal weight */
-  nav a {
-    font-weight: 500;
-  }
+    /* Button reset (for Blogs dropdown) */
+    .nav-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
 
-  /* Make Blogs button same as links (not bold) */
-  nav button {
-    font-weight: 500;
-  }
-</style>
+    /* Underline hover effect */
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      height: 2px; /* underline thickness (change here) */
+      width: 0%;
+      background: #111;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Dropdown container */
+    .nav-item {
+      position: relative;
+    }
+
+    /* Dropdown menu hidden by default */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 42px;
+      left: 0;
+      min-width: 230px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+      z-index: 1000;
+    }
+
+    /* Dropdown show when active */
+    .dropdown.active {
+      display: block;
+    }
+
+    .dropdown-link {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+
+    .dropdown-link:hover {
+      background: #f5f5f5;
+    }
+  </style>
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BGMC455"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BGMC455"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <!-- Site Header -->
   <header class="site-header">
     <div class="header-container">
@@ -160,20 +127,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- Navigation -->
       <nav class="site-nav">
-        <a href="{{ site.baseurl }}/">Home</a>
-        <div class="nav-item">
-    <button class="nav-link nav-btn" id="blogsBtn" type="button">
-      Blogs
-    </button>
+        <a href="{{ site.baseurl }}/" class="nav-link">Home</a>
 
-    <div class="dropdown" id="blogsDropdown">
-      <a href="/blogs/seo-blogs/" class="dropdown-link">SEO Blogs</a>
-      <a href="/blogs/performance-marketing-blogs/" class="dropdown-link">Performance Marketing Blogs</a>
-    </div>
-  </div>
-        <a href="{{ site.baseurl }}/portfolio/">Portfolio</a>
-        <a href="{{ site.baseurl }}/experiments/">Experiments</a>
-        <a href="{{ site.baseurl }}/contact/">Contact</a>
+        <div class="nav-item">
+          <button class="nav-link nav-btn" id="blogsBtn" type="button">
+            Blogs
+          </button>
+
+          <div class="dropdown" id="blogsDropdown">
+            <a href="{{ site.baseurl }}/blogs/seo-blogs/" class="dropdown-link">SEO Blogs</a>
+            <a href="{{ site.baseurl }}/blogs/performance-marketing-blogs/" class="dropdown-link">Performance Marketing Blogs</a>
+          </div>
+        </div>
+
+        <a href="{{ site.baseurl }}/portfolio/" class="nav-link">Portfolio</a>
+        <a href="{{ site.baseurl }}/experiments/" class="nav-link">Experiments</a>
+        <a href="{{ site.baseurl }}/contact/" class="nav-link">Contact</a>
       </nav>
 
     </div>
@@ -183,22 +152,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <main class="hero">
     {{ content }}
   </main>
-<script>
-  const blogsBtn = document.getElementById("blogsBtn");
-  const blogsDropdown = document.getElementById("blogsDropdown");
 
-  if (blogsBtn && blogsDropdown) {
-    blogsBtn.addEventListener("click", () => {
-      blogsDropdown.classList.toggle("active");
-    });
+  <script>
+    const blogsBtn = document.getElementById("blogsBtn");
+    const blogsDropdown = document.getElementById("blogsDropdown");
 
-    document.addEventListener("click", (e) => {
-      // Close dropdown when clicking outside
-      if (!blogsBtn.contains(e.target) && !blogsDropdown.contains(e.target)) {
-        blogsDropdown.classList.remove("active");
-      }
-    });
-  }
-</script>
+    if (blogsBtn && blogsDropdown) {
+      blogsBtn.addEventListener("click", () => {
+        blogsDropdown.classList.toggle("active");
+      });
+
+      document.addEventListener("click", (e) => {
+        // Close dropdown when clicking outside
+        if (!blogsBtn.contains(e.target) && !blogsDropdown.contains(e.target)) {
+          blogsDropdown.classList.remove("active");
+        }
+      });
+    }
+  </script>
 </body>
 </html>
