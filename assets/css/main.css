@@ -208,7 +208,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-link::after {
   display: none !important;
-  
+}
+
 /* Primary button */
 
 .btn.primary {
