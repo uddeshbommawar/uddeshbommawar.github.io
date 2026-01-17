@@ -46,7 +46,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Navigation -->
       <nav class="site-nav">
         <a href="{{ site.baseurl }}/">Home</a>
-        <a href="{{ site.baseurl }}/blog/">Blogs</a>
+        <div class="nav-item">
+    <button class="nav-link nav-btn" id="blogsBtn" type="button">
+      Blogs
+    </button>
+
+    <div class="dropdown" id="blogsDropdown">
+      <a href="/blogs/seo/" class="dropdown-link">SEO Blogs</a>
+      <a href="/blogs/performance-marketing/" class="dropdown-link">Performance Marketing Blogs</a>
+    </div>
+  </div>
         <a href="{{ site.baseurl }}/portfolio/">Portfolio</a>
         <a href="{{ site.baseurl }}/experiments/">Experiments</a>
         <a href="{{ site.baseurl }}/contact/">Contact</a>
