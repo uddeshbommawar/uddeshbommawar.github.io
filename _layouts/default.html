@@ -27,86 +27,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
   <meta name="google-site-verification" content="A7NtwOPHCNvu1Hbgps2-rGwtBqIUABEtZSAsjmdNK8c" />
-<style>
-  .nav-glass {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    border-radius: 18px;
-    margin: 14px auto;
-    width: min(1100px, 94%);
-    padding: 12px 18px;
-
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-
-    box-shadow:
-      0 10px 30px rgba(0,0,0,0.18),
-      inset 0 1px 0 rgba(255,255,255,0.16);
-  }
-
-  .nav-glass::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 18px;
-    pointer-events: none;
-
-    background: radial-gradient(
-      circle at 20% 0%,
-      rgba(255,255,255,0.25),
-      rgba(255,255,255,0.06) 35%,
-      transparent 70%
-    );
-  }
-
-  .nav-glass::after {
-    content: "";
-    position: absolute;
-    inset: -40%;
-    border-radius: 18px;
-    pointer-events: none;
-
-    background: linear-gradient(
-      120deg,
-      transparent 35%,
-      rgba(255,255,255,0.22) 50%,
-      transparent 65%
-    );
-
-    transform: rotate(10deg);
-    animation: lensShine 5s ease-in-out infinite;
-    opacity: 0.35;
-  }
-
-  @keyframes lensShine {
-    0%   { transform: translateX(-30%) rotate(10deg); }
-    50%  { transform: translateX(30%) rotate(10deg); }
-    100% { transform: translateX(-30%) rotate(10deg); }
-  }
-
-  .nav-glass a {
-    color: rgba(255,255,255,0.9);
-    text-decoration: none;
-    font-weight: 600;
-    padding: 8px 12px;
-    border-radius: 12px;
-    transition: 0.25s ease;
-  }
-
-  .nav-glass a:hover {
-    background: rgba(255,255,255,0.14);
-  }
-
-  .nav-glass.scrolled {
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    background: rgba(255, 255, 255, 0.12);
-  }
-</style>
 </head>
 
 <body>
@@ -139,14 +59,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <main class="hero">
     {{ content }}
   </main>
-<script>
-  const nav = document.querySelector(".nav-glass");
-
-  window.addEventListener("scroll", () => {
-    if (!nav) return;
-    if (window.scrollY > 10) nav.classList.add("scrolled");
-    else nav.classList.remove("scrolled");
-  });
-</script>
 </body>
 </html>
