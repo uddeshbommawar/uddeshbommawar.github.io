@@ -1,7 +1,7 @@
 ---
 layout: default
-title: SEO & Performance Marketing Experiments
-description: Personal SEO lab by Uddesh Bommawar focused on technical SEO, content optimization, Core Web Vitals, and Google Ads.
+title: Marketers' Blogs & Latest Updates by Uddesh Bommawar
+description: Explore SEO experiments on technical SEO, content optimization, and Core Web Vitals. Read SEO, performance marketing blogs, and latest updates. Visit Now!
 ---
 
 <div class="hero-container">
