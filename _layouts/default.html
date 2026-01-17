@@ -147,5 +147,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <main class="hero">
     {{ content }}
   </main>
+<script>
+  const blogsBtn = document.getElementById("blogsBtn");
+  const blogsDropdown = document.getElementById("blogsDropdown");
+
+  if (blogsBtn && blogsDropdown) {
+    blogsBtn.addEventListener("click", () => {
+      blogsDropdown.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+      // Close dropdown when clicking outside
+      if (!blogsBtn.contains(e.target) && !blogsDropdown.contains(e.target)) {
+        blogsDropdown.classList.remove("active");
+      }
+    });
+  }
+</script>
 </body>
 </html>
