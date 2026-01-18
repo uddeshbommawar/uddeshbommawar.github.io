@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 300px;
 }
+
 /* Logo */
 
 .site-logo {
@@ -157,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 0;
   bottom: -6px;
-  height: 2px;            /* underline thickness */
+  height: 2px; /* underline thickness */
   width: 0%;
   background: #111;
   transition: width 0.25s ease;
@@ -178,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   position: absolute;
   top: 42px;
-  left: 10;
+  left: 10px; /* ✅ fixed unit + shifted right */
   min-width: 230px;
 
   background: #fff;
@@ -217,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
+
 .hero-cta .btn.primary {
   font-weight: 600;
 }
@@ -294,6 +296,7 @@ h1, h2, h3, h4, h5, h6 {
   right: -10px;
   border-left: 4px solid #52c41a;
 }
+
 /* ================================
    Welcome Note (Hero Intro)
    ================================ */
@@ -305,6 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #444;
   margin-bottom: 14px;
 }
+
 /* ================================
    Waving Hand Animation
    ================================ */
@@ -326,6 +330,7 @@ h1, h2, h3, h4, h5, h6 {
   60% { transform: rotate(0deg); }
   100% { transform: rotate(0deg); }
 }
+
 /* ================================
    Profile Image – Premium Hover
    ================================ */
@@ -348,6 +353,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
   }
 }
+
 /* ================================
    Image Wrapper (Anchor Element)
    ================================ */
@@ -391,6 +397,7 @@ h1, h2, h3, h4, h5, h6 {
 
   animation: float 3s ease-in-out infinite;
 }
+
 .badge.looker {
   top: 80px;
   left: -60px;
@@ -469,6 +476,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -480,6 +488,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 0% 50%;
   }
 }
+
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
@@ -499,6 +508,7 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 360px;
   }
 }
+
 /* ================================
    Blog Listing Pages (SEO/Performance)
    ================================ */
@@ -579,19 +589,43 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 12px;
 }
 
-.popular-link {
-  display: block;
+/* ✅ Popular cards with thumbnail images */
+.popular-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
   text-decoration: none;
   color: #111;
-  padding: 10px 12px;
-  border-radius: 12px;
+
+  padding: 10px;
+  border-radius: 14px;
   background: #fafafa;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   transition: 0.2s ease;
 }
 
-.popular-link:hover {
+.popular-card:hover {
   background: #f1f1f1;
+}
+
+.popular-card img {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.popular-title {
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.popular-meta {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: #666;
 }
 
 .blogs-heading h2 {
