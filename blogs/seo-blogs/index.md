@@ -44,6 +44,22 @@ description: Explore technical SEO experiments, audits, content optimization and
       <p class="popular-meta">7 min read</p>
     </div>
   </a>
+  <a class="popular-card" href="{{ site.baseurl }}/blogs/seo-blog-3/">
+  <img src="{{ site.baseurl }}/assets/images/blogs/seo-popular-3.jpg" alt="Popular SEO blog">
+  <div>
+    <p class="popular-title">Internal Linking Strategy for SEO</p>
+    <p class="popular-meta">6 min read</p>
+  </div>
+</a>
+
+<a class="popular-card" href="{{ site.baseurl }}/blogs/seo-blog-4/">
+  <img src="{{ site.baseurl }}/assets/images/blogs/seo-popular-4.jpg" alt="Popular SEO blog">
+  <div>
+    <p class="popular-title">On-Page SEO Checklist (2026)</p>
+    <p class="popular-meta">4 min read</p>
+  </div>
+</a>
+
 </aside>
 
   </section>
