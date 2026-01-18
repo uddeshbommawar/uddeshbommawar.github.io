@@ -67,9 +67,9 @@
   </header>
 
   <!-- Page Content (Hero, etc.) -->
-  <main class="hero">
-    {{ content }}
-  </main>
+ <main class="{% if page.url == '/' %}hero{% else %}page-content{% endif %}">
+  {{ content }}
+</main>
 
   <script>
     const blogsBtn = document.getElementById("blogsBtn");
