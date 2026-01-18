@@ -592,12 +592,12 @@ h1, h2, h3, h4, h5, h6 {
 /* ✅ Popular cards with thumbnail images */
 .popular-card {
   display: flex;
-  gap: 15px;
+  gap: 18px;
   align-items: center;
   text-decoration: none;
   color: #111;
 
-  padding: 18px;
+  padding: 15px;
   border-radius: 14px;
   background: #fafafa;
   margin-bottom: 16px;
