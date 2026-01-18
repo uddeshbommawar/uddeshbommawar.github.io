@@ -499,4 +499,157 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 360px;
   }
 }
+/* ================================
+   Blog Listing Pages (SEO/Performance)
+   ================================ */
 
+.blogs-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+.blogs-hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 24px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-decoration: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.featured-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.featured-content {
+  padding: 18px 18px 20px;
+}
+
+.featured-content h1 {
+  font-size: 1.5rem;
+  margin: 10px 0 10px;
+  color: #111;
+}
+
+.featured-content p {
+  color: #444;
+  line-height: 1.5;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f2f2f2;
+  color: #111;
+  font-weight: 500;
+}
+
+.meta {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.popular-posts {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.popular-posts h2 {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.popular-link {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fafafa;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+.popular-link:hover {
+  background: #f1f1f1;
+}
+
+.blogs-heading h2 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.blogs-heading p {
+  color: #444;
+  margin-bottom: 22px;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.blog-card {
+  display: block;
+  text-decoration: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.05);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-card-body {
+  padding: 16px;
+}
+
+.blog-card-body h3 {
+  margin: 10px 0 10px;
+  color: #111;
+  font-size: 1.1rem;
+}
+
+.blog-card-body p {
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .blogs-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .blogs-grid {
+    grid-template-columns: 1fr;
+  }
+}
