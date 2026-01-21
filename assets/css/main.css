@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
-body.home-only-gradient {
+/* ✅ Global styles for ALL pages */
+body {
   font-family: "Rubik", sans-serif;
   color: #111;
+}
 
+/* ✅ Gradient ONLY for Home page */
+body.home-only-gradient {
   /* Animated subtle gradient */
   background: linear-gradient(
     120deg,
@@ -687,10 +691,10 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr;
   }
 }
+
 /* Default page wrapper for non-home pages */
 .page-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 32px 24px 80px;
 }
-
