@@ -78,19 +78,8 @@ layout: default
           Claude
         </a>
 
-        <!-- ✅ Copy Prompt button -->
-        <button class="ai-btn ai-btn-copy" type="button" id="copySummaryPrompt">
-          <span class="ai-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8 7c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2h-8c-1.1 0-2-.9-2-2V7zm2 0h8v10h-8V7zM4 9c0-1.1.9-2 2-2h1v2H6v10h8v1c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V9z"></path>
-            </svg>
-          </span>
-          Copy Prompt
-        </button>
-      </div>
-
       <p class="ai-summary-note">
-        Clicking any tool will <b>copy the prompt automatically</b>. Just paste and hit Enter.
+        Clicking any tool will <b> automatically copy the prompt </b>. Just paste and hit Enter.
       </p>
     </section>
 
@@ -100,13 +89,11 @@ layout: default
         const pageUrl = "{{ site.url }}{{ page.url }}";
 
         const promptText =
-`Summarize this blog post in a clear and structured way.
+`Summarize this blog post in 100 words. 
 
 URL: ${pageUrl}
-Title: ${pageTitle}
 
-Output format:
-1) 2-line summary
+1) 100-words summary
 2) Key takeaways (5 bullets)
 3) Step-by-step explanation (if applicable)
 4) Common mistakes to avoid
