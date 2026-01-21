@@ -805,6 +805,13 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.ai-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 8px;
+  display: inline-block;
+}
 
 .ai-btn:hover {
   transform: translateY(-2px);
