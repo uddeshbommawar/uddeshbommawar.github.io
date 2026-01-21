@@ -784,29 +784,66 @@ h1, h2, h3, h4, h5, h6 {
 .post-author-row {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between; /* ✅ pushes LinkedIn to right */
+  gap: 14px;
   margin-bottom: 18px;
 }
 
+.post-author-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .post-author-img {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   border-radius: 999px;
   object-fit: cover;
 }
 
+.post-author-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .post-author-name p {
   margin: 0;
-  font-weight: 600;
+  font-weight: 700;
   color: #111;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.post-author-role {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+  margin: 0;
+}
+
+.post-linkedin {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.post-linkedin:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
 .post-linkedin img {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
-  margin-left: 10px;
-  opacity: 0.9;
 }
 
 .post-linkedin:hover img {
