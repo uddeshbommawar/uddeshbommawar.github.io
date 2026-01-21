@@ -540,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .breadcrumbs a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .crumb-sep {
