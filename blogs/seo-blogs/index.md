@@ -1,7 +1,8 @@
 ---
 layout: default
-title: SEO Blogs | Uddesh Bommawar
-description: Explore technical SEO experiments, audits, content optimization and Core Web Vitals insights.
+title: SEO Blogs
+breadcrumb_label: SEO Blogs
+
 ---
 
 <div class="blogs-page">
