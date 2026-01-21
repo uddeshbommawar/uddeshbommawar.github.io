@@ -514,6 +514,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ================================
+   Breadcrumbs
+   ================================ */
+
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 24px 10px;
+
+  font-size: 0.9rem;
+  color: #666;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.crumb-sep {
+  color: #999;
+}
+
+.crumb-current {
+  color: #666;
+  font-weight: 500;
+}
+
+/* ================================
    Blog Listing Pages (SEO/Performance)
    ================================ */
 
