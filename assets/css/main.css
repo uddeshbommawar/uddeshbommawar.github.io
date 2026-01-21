@@ -797,8 +797,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ✅ Logo bigger + clear */
 .ai-logo {
-  width: 42px;         /* ✅ increased size */
-  height: 42px;
+  width: 60px;         /* ✅ increased size */
+  height: 60px;
   object-fit: contain;
   display: block;
 }
