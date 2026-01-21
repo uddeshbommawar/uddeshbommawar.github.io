@@ -4,95 +4,133 @@ layout: default
 
 <article class="post-wrapper">
 
-  <header class="post-header">
-    <p class="post-category">{{ page.category | default: "SEO" }}</p>
+  <header class="post-hero">
 
-    <h1 class="post-title">{{ page.title }}</h1>
+    <!-- Left side content -->
+    <div class="post-hero-left">
 
-    {% if page.description %}
-      <p class="post-description">{{ page.description }}</p>
-    {% endif %}
+      <h1 class="post-title">{{ page.title }}</h1>
 
-    <div class="post-meta">
-      <span class="post-author">{{ page.author | default: "Uddesh Bommawar" }}</span>
-      <span class="post-dot">•</span>
-      <span class="post-date">
-        {% if page.date %}
-          {{ page.date | date: "%b %Y" }}
-        {% else %}
-          {{ "now" | date: "%b %Y" }}
-        {% endif %}
-      </span>
-
-      {% if page.read_time %}
-        <span class="post-dot">•</span>
-        <span class="post-readtime">{{ page.read_time }} min read</span>
+      {% if page.description %}
+        <p class="post-description">{{ page.description }}</p>
       {% endif %}
-    </div>
-  </header>
 
-  {% if page.featured_image %}
-    <div class="post-cover">
-      <img src="{{ site.baseurl }}{{ page.featured_image }}" alt="{{ page.title }}">
-    </div>
-  {% endif %}
+      <div class="post-dates">
+        {% if page.date %}
+          <p class="post-date-line"><b>Published:</b> {{ page.date | date: "%B %d, %Y" }}</p>
+        {% endif %}
 
-{% if page.ai_summary != false %}
-  <section class="ai-summary">
-    <p class="ai-summary-label">Read summarized version with</p>
+        {% if page.updated %}
+          <p class="post-date-line"><b>Updated:</b> {{ page.updated }}</p>
+        {% endif %}
+      </div>
 
-    <div class="ai-summary-buttons">
-      <a class="ai-btn ai-tool" href="https://chat.openai.com/" target="_blank" rel="noopener">
-  <img class="ai-logo" src="{{ site.baseurl }}/assets/images/ai/Chatgpt Logo.webp" alt="ChatGPT">
-</a>
-      
-<a class="ai-btn ai-tool" href="https://www.perplexity.ai/" target="_blank" rel="noopener">
-  <img class="ai-logo" src="{{ site.baseurl }}/assets/images/ai/Claude AI Logo.webp" alt="Perplexity">
-</a>
+      <div class="post-author-row">
+        <img class="post-author-img" src="{{ site.baseurl }}/assets/images/profile.jpg" alt="Uddesh Bommawar">
 
-<a class="ai-btn ai-tool" href="https://gemini.google.com/" target="_blank" rel="noopener">
-  <img class="ai-logo" src="{{ site.baseurl }}/assets/images/ai/Gemini Logo.webp" alt="Gemini">
-</a>
+        <div class="post-author-name">
+          <p>Uddesh Bommawar</p>
+        </div>
 
-<a class="ai-btn ai-tool" href="https://claude.ai/" target="_blank" rel="noopener">
-  <img class="ai-logo" src="{{ site.baseurl }}/assets/images/ai/Perplexity Logo.webp" alt="Claude">
-</a>
+        <a class="post-linkedin"
+           href="https://www.linkedin.com/"
+           target="_blank"
+           rel="noopener"
+           aria-label="LinkedIn Profile">
+          <img src="{{ site.baseurl }}/assets/images/icons/linkedin.webp" alt="LinkedIn">
+        </a>
+      </div>
 
-    </div>
+      <!-- ✅ AI summary heading + icon buttons (social icon style) -->
+      {% if page.ai_summary != false %}
+        <div class="ai-summary-inline">
+          <p class="ai-summary-inline-title">Read summarized version with</p>
 
-    <p class="ai-summary-note">
-      Clicking any tool will <b>automatically copy the prompt</b>. Just paste and hit Enter.
-    </p>
-  </section>
+          <div class="ai-summary-icons">
+            <a class="ai-icon-btn ai-tool"
+               href="https://chat.openai.com/"
+               target="_blank"
+               rel="noopener"
+               aria-label="ChatGPT">
+              <img class="ai-icon-img" src="{{ site.baseurl }}/assets/images/ai/chatgpt.webp" alt="ChatGPT">
+            </a>
 
-  <script>
-    (function () {
-      const pageTitle = "{{ page.title | escape }}";
-      const pageUrl = "{{ site.url }}{{ page.url }}";
+            <a class="ai-icon-btn ai-tool"
+               href="https://claude.ai/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Claude">
+              <img class="ai-icon-img" src="{{ site.baseurl }}/assets/images/ai/claude.webp" alt="Claude">
+            </a>
 
-      const promptText =
+            <a class="ai-icon-btn ai-tool"
+               href="https://gemini.google.com/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Gemini">
+              <img class="ai-icon-img" src="{{ site.baseurl }}/assets/images/ai/gemini.webp" alt="Gemini">
+            </a>
+
+            <a class="ai-icon-btn ai-tool"
+               href="https://www.perplexity.ai/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Perplexity">
+              <img class="ai-icon-img" src="{{ site.baseurl }}/assets/images/ai/perplexity.webp" alt="Perplexity">
+            </a>
+          </div>
+
+          <p class="ai-summary-inline-note">
+            Clicking any tool will <b>automatically copy the prompt</b>. Just paste and hit Enter.
+          </p>
+        </div>
+
+        <script>
+          (function () {
+            const pageUrl = "{{ site.url }}{{ page.url }}";
+
+            const promptText =
 `Summarize this blog post in 100 words.
 
 URL: ${pageUrl}
 
 Keep it beginner-friendly and actionable.`;
 
-      const toolButtons = document.querySelectorAll(".ai-tool");
-      toolButtons.forEach((btn) => {
-        btn.addEventListener("click", async () => {
-          try {
-            await navigator.clipboard.writeText(promptText);
-          } catch (e) {}
-        });
-      });
-    })();
-  </script>
-{% endif %}
+            const toolButtons = document.querySelectorAll(".ai-tool");
+            toolButtons.forEach((btn) => {
+              btn.addEventListener("click", async () => {
+                try {
+                  await navigator.clipboard.writeText(promptText);
+                } catch (e) {}
+              });
+            });
+          })();
+        </script>
+      {% endif %}
+
+    </div>
+
+    <!-- Right side featured image -->
+    <div class="post-hero-right">
+      {% if page.featured_image %}
+        <div class="post-hero-image">
+          <img src="{{ site.baseurl }}{{ page.featured_image }}" alt="{{ page.title }}">
+        </div>
+      {% endif %}
+    </div>
+
+  </header>
+
+  <!-- ✅ Post content -->
+  <section class="post-content">
+    {{ content }}
+  </section>
 
   {% if page.cta_title or page.cta_text %}
     <section class="post-cta">
       <h2>{{ page.cta_title | default: "Want help applying this?" }}</h2>
       <p>{{ page.cta_text | default: "Explore more experiments, frameworks, and actionable SEO learning." }}</p>
+
       {% if page.cta_link and page.cta_button %}
         <a class="btn primary" href="{{ site.baseurl }}{{ page.cta_link }}">{{ page.cta_button }}</a>
       {% endif %}
