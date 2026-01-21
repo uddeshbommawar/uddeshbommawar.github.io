@@ -760,8 +760,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ai-btn {
-  width: 90px;              /* ✅ bigger */
-  height: 30px;             /* ✅ bigger */
+  width: 110px;              /* ✅ bigger */
+  height: 40px;             /* ✅ bigger */
   padding: 10;
   border-radius: 14px;
 
@@ -797,8 +797,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ✅ Logo bigger + clear */
 .ai-logo {
-  width: 60px;         /* ✅ increased size */
-  height: 60px;
+  width: 70px;         /* ✅ increased size */
+  height: 70px;
   object-fit: contain;
   display: block;
 }
