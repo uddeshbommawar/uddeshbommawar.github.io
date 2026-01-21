@@ -794,6 +794,9 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 16px;    /* ✅ square + curved edge */
   object-fit: contain;
   object-position: center top;
+  border: 1px solid #eee;
+box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+background: #fff;
 }
 
 .post-author-name {
