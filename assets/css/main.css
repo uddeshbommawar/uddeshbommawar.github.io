@@ -792,7 +792,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 70px;            /* ✅ bigger */
   height: 70px;
   border-radius: 16px;    /* ✅ square + curved edge */
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center top;
 }
 
 .post-author-name {
