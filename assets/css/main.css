@@ -748,6 +748,7 @@ h1, h2, h3, h4, h5, h6 {
 
   background: #fff5ee;
   border: 1px solid #f3ded0;
+  max-width: 720px;
 }
 
 .ai-summary-label {
@@ -787,6 +788,23 @@ h1, h2, h3, h4, h5, h6 {
               border 0.15s ease,
               backdrop-filter 0.15s ease;
 }
+
+.ai-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.ai-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
+}
+
 
 .ai-btn:hover {
   transform: translateY(-2px);
