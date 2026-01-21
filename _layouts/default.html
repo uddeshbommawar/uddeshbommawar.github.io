@@ -68,6 +68,23 @@
 
   <!-- Page Content (Hero, etc.) -->
  <main class="{% if page.url == '/' %}hero{% else %}page-content{% endif %}">
+
+  {% if page.url != '/' %}
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ site.baseurl }}/">Home</a>
+
+      {% if page.breadcrumb_parent_url and page.breadcrumb_parent_title %}
+        <span class="crumb-sep">/</span>
+        <a href="{{ site.baseurl }}{{ page.breadcrumb_parent_url }}">{{ page.breadcrumb_parent_title }}</a>
+      {% endif %}
+
+      {% if page.title %}
+        <span class="crumb-sep">/</span>
+        <span class="crumb-current">{{ page.title }}</span>
+      {% endif %}
+    </nav>
+  {% endif %}
+
   {{ content }}
 </main>
 
