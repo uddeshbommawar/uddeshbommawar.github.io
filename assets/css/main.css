@@ -784,53 +784,50 @@ h1, h2, h3, h4, h5, h6 {
 .post-author-row {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ✅ pushes LinkedIn to right */
   gap: 14px;
   margin-bottom: 18px;
 }
 
-.post-author-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 .post-author-img {
-  width: 46px;
-  height: 46px;
-  border-radius: 999px;
+  width: 70px;            /* ✅ bigger */
+  height: 70px;
+  border-radius: 16px;    /* ✅ square + curved edge */
   object-fit: cover;
 }
 
 .post-author-name {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  justify-content: center; /* ✅ aligns block height with image */
+  gap: 6px;
 }
 
 .post-author-name p {
   margin: 0;
-  font-weight: 700;
+  font-weight: 800;
   color: #111;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.2;
 }
 
 .post-author-role {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #666;
   font-weight: 500;
   margin: 0;
 }
 
+/* ✅ LinkedIn below role */
 .post-linkedin {
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   border-radius: 10px;
   border: 1px solid #ddd;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: #fff;
   transition: 0.2s ease;
 }
@@ -841,9 +838,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-linkedin img {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   object-fit: contain;
+  display: block;
 }
 
 .post-linkedin:hover img {
