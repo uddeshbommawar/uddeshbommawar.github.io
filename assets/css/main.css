@@ -514,15 +514,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ================================
-   Breadcrumbs
+   Breadcrumbs (Aligned with blog cards)
    ================================ */
 
 .breadcrumbs {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 18px 24px 10px;
 
-  font-size: 0.9rem;
+  /* ✅ match blog container padding */
+  padding: 24px 24px 10px;
+
+  font-size: 0.95rem;
   color: #666;
 
   display: flex;
@@ -546,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .crumb-current {
-  color: #666;
+  color: #111;
   font-weight: 500;
 }
 
