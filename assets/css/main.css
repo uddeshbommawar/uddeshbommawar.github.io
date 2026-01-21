@@ -737,3 +737,75 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 32px 24px 80px;
 }
+/* ================================
+   AI Summary Box + Glass Buttons
+   ================================ */
+
+.ai-summary {
+  margin: 22px 0 22px;
+  padding: 18px;
+  border-radius: 16px;
+
+  background: #fff5ee;
+  border: 1px solid #f3ded0;
+}
+
+.ai-summary-label {
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.ai-summary-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ai-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 14px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(234, 213, 200, 0.9);
+
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease,
+              background 0.15s ease,
+              border 0.15s ease,
+              backdrop-filter 0.15s ease;
+}
+
+.ai-btn:hover {
+  transform: translateY(-2px);
+
+  /* ✅ Glass effect on hover */
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.55);
+}
+
+.ai-summary-note {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+}
