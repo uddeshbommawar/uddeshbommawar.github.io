@@ -761,7 +761,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ai-btn {
   width: 100px;              /* ✅ bigger */
-  height: 80px;             /* ✅ bigger */
+  height: 60px;             /* ✅ bigger */
   padding: 0;
   border-radius: 14px;
 
