@@ -762,7 +762,7 @@ h1, h2, h3, h4, h5, h6 {
 .ai-btn {
   width: 130px;              /* ✅ bigger */
   height: 70px;             /* ✅ bigger */
-  padding: 0;
+  padding: 10;
   border-radius: 14px;
 
   display: flex;
@@ -797,8 +797,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ✅ Logo bigger + clear */
 .ai-logo {
-  width: 58px;         /* ✅ increased size */
-  height: 58px;
+  width: 100px;         /* ✅ increased size */
+  height: 100px;
   object-fit: contain;
   display: block;
 }
