@@ -742,8 +742,8 @@ h1, h2, h3, h4, h5, h6 {
    ================================ */
 
 .ai-summary {
-  margin: 22px 0 22px;
-  padding: 18px;
+  margin: 18px 0 22px;
+  padding: 18px 18px;
   border-radius: 16px;
 
   background: #fff5ee;
@@ -751,25 +751,23 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 720px;
 }
 
-.ai-summary-label {
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #111;
-}
-
 .ai-summary-buttons {
   display: flex;
-  gap: 12px;
+  gap: 14px;
   flex-wrap: wrap;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .ai-btn {
-  display: inline-flex;
+  width: 72px;              /* ✅ bigger */
+  height: 52px;             /* ✅ bigger */
+  padding: 0;
+  border-radius: 14px;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-
-  padding: 10px 14px;
-  border-radius: 12px;
 
   background: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba(234, 213, 200, 0.9);
@@ -777,10 +775,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #111;
   font-weight: 600;
-  font-size: 0.9rem;
-
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
 
   transition: transform 0.15s ease,
               box-shadow 0.15s ease,
@@ -789,48 +783,29 @@ h1, h2, h3, h4, h5, h6 {
               backdrop-filter 0.15s ease;
 }
 
-.ai-icon {
-  width: 18px;
-  height: 18px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 8px;
-}
-
-.ai-icon svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
-  display: block;
-}
-
-.ai-logo {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  margin-right: 8px;
-  display: inline-block;
-}
-
+/* ✅ Glass hover */
 .ai-btn:hover {
   transform: translateY(-2px);
-
-  /* ✅ Glass effect on hover */
   background: rgba(255, 255, 255, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.65);
-
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
   box-shadow:
     0 14px 30px rgba(0,0,0,0.08),
     inset 0 1px 0 rgba(255,255,255,0.55);
 }
 
+/* ✅ Logo bigger + clear */
+.ai-logo {
+  width: 34px;         /* ✅ increased size */
+  height: 34px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ✅ Note text */
 .ai-summary-note {
-  margin-top: 12px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #444;
   line-height: 1.5;
 }
