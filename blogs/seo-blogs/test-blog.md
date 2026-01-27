@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Test Blog"
-description: "This is a test blog post to verify the blog template layout, breadcrumbs, and AI summary box."
-breadcrumb_label: SEO Blogs
+title: "Search Engine Optimization (SEO) Starter Guide"
+description: "Beginner-friendly SEO guide covering fundamentals, best practices, and steps to improve search visibility."
+breadcrumb_label: Search Engine Optimization (SEO) Starter Guide
 featured_image: /assets/images/blog banners/SEO Guide.png
 ---
