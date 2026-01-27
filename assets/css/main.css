@@ -571,30 +571,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .featured-card {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
-
+  grid-template-columns: 1fr;
+  text-decoration: none;
   border-radius: 16px;
   overflow: hidden;
   background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 }
 
 .featured-image {
   position: relative;
-  height: 260%;
+  height: 100%;
   overflow: hidden;
   display: flex;
   align-items: flex-end;   /* ⬅ anchors image to bottom */
   justify-content: flex-end;
-}
-.featured-image img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;          /* ✅ intentional crop */
-  object-position: bottom right;
-
-  transform: scale(1.05);     /* subtle zoom for premium feel */
 }
 
 .featured-content {
