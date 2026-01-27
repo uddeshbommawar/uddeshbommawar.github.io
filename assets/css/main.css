@@ -754,7 +754,17 @@ h1, h2, h3, h4, h5, h6 {
   align-items: start;
 
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
+
+  .post-hero {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #fafafa
+  );
+  border-radius: 24px;
+  padding: 32px 32px;
+}
 
 .post-hero-left .post-title {
   font-size: 2.8rem;
@@ -857,12 +867,19 @@ background: #fff;
   overflow: hidden;
   border: 1px solid #eee;
   box-shadow: 0 14px 35px rgba(0,0,0,0.06);
+  max-width: 520px;
+  grid-template-columns: 1.15fr 0.85fr;
 }
 
 .post-hero-image img {
   width: 100%;
   height: auto;
   display: block;
+}
+  
+.post-hero-right {
+  align-self: flex-start;
+  padding-top: 12px;
 }
 
 /* ================================
@@ -939,7 +956,7 @@ background: #fff;
 
 .post-content h3 {
   font-size: 1.25rem;
-  margin-top: 24px;
+  margin-top: 12px;
   margin-bottom: 10px;
   color: #111;
 }
