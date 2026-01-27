@@ -580,10 +580,13 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 }
 
-.featured-card {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
+.featured-image {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;   /* ⬅ anchors image to bottom */
+  justify-content: flex-end;
 }
 
 .featured-content {
