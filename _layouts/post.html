@@ -121,17 +121,6 @@ Keep it beginner-friendly and actionable.`;
     </div>
 
   </header>
-  <!-- ================================
-     Table of Contents
-     ================================ -->
-<nav class="toc-wrapper" aria-label="Table of contents">
-  <button class="toc-toggle" aria-expanded="true">
-    Table of Contents
-    <span class="toc-arrow">▾</span>
-  </button>
-
-  <ul class="toc-list" id="toc"></ul>
-</nav>
 
   <!-- ✅ Post content -->
   <section class="post-content">
@@ -148,5 +137,13 @@ Keep it beginner-friendly and actionable.`;
       {% endif %}
     </section>
   {% endif %}
+
+    <!-- Post content -->
+  <section class="post-content">
+    {{ content }}
+  </section>
+
+  <!-- Table of Contents JS -->
+  <script src="{{ site.baseurl }}/assets/js/toc.js"></script>
 
 </article>
