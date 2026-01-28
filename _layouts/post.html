@@ -4,9 +4,6 @@ layout: default
 
 <article class="post-wrapper">
 
-  <!-- ================================
-       Blog Hero
-       ================================ -->
   <header class="post-hero">
 
     <!-- Left side content -->
@@ -28,41 +25,59 @@ layout: default
         {% endif %}
       </div>
 
-      <div class="post-author-row">
-        <img class="post-author-img"
-             src="{{ site.baseurl }}/assets/images/profile.png"
-             alt="Uddesh Bommawar">
+<div class="post-author-row">
+  <img class="post-author-img" src="{{ site.baseurl }}/assets/images/profile.png" alt="Uddesh Bommawar">
 
-        <div class="post-author-name">
-          <p>Uddesh Bommawar</p>
-          <p class="post-author-role">SEO Executive</p>
+  <div class="post-author-name">
+    <p>Uddesh Bommawar</p>
+    <p class="post-author-role">SEO Executive</p>
 
-          <a class="post-linkedin"
-             href="https://www.linkedin.com/in/uddesh-bommawar-seo-executive/"
-             target="_blank"
-             rel="noopener"
-             aria-label="LinkedIn Profile">
-            <img src="{{ site.baseurl }}/assets/images/icons/linkedin.webp" alt="LinkedIn">
-          </a>
-        </div>
-      </div>
+    <a class="post-linkedin"
+       href="https://www.linkedin.com/in/uddesh-bommawar-seo-executive/"
+       target="_blank"
+       rel="noopener"
+       aria-label="LinkedIn Profile">
+      <img src="{{ site.baseurl }}/assets/images/icons/linkedin.webp" alt="LinkedIn">
+    </a>
+  </div>
+</div>
 
+      <!-- ✅ AI summary heading + icon buttons (social icon style) -->
       {% if page.ai_summary != false %}
         <div class="ai-summary-inline">
           <p class="ai-summary-inline-title">Read summarized version with</p>
 
           <div class="ai-summary-icons">
-            <a class="ai-icon-btn ai-tool" href="https://chat.openai.com/" target="_blank">
-              <img src="{{ site.baseurl }}/assets/images/ai/chatgpt.webp" alt="ChatGPT">
+            <a class="ai-icon-btn ai-tool"
+               href="https://chat.openai.com/"
+               target="_blank"
+               rel="noopener"
+               aria-label="ChatGPT">
+              <img class="ai-icon-img" src="{{ site.baseurl }}/assets/images/ai/chatgpt.webp" alt="ChatGPT">
             </a>
-            <a class="ai-icon-btn ai-tool" href="https://claude.ai/" target="_blank">
-              <img src="{{ site.baseurl }}/assets/images/ai/claude.webp" alt="Claude">
+
+            <a class="ai-icon-btn ai-tool"
+               href="https://claude.ai/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Claude">
+              <img class="ai-icon-img" src="{{ site.baseurl }}/assets/images/ai/claude.webp" alt="Claude">
             </a>
-            <a class="ai-icon-btn ai-tool" href="https://gemini.google.com/" target="_blank">
-              <img src="{{ site.baseurl }}/assets/images/ai/gemini.webp" alt="Gemini">
+
+            <a class="ai-icon-btn ai-tool"
+               href="https://gemini.google.com/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Gemini">
+              <img class="ai-icon-img" src="{{ site.baseurl }}/assets/images/ai/gemini.webp" alt="Gemini">
             </a>
-            <a class="ai-icon-btn ai-tool" href="https://www.perplexity.ai/" target="_blank">
-              <img src="{{ site.baseurl }}/assets/images/ai/perplexity.webp" alt="Perplexity">
+
+            <a class="ai-icon-btn ai-tool"
+               href="https://www.perplexity.ai/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Perplexity">
+              <img class="ai-icon-img" src="{{ site.baseurl }}/assets/images/ai/perplexity.webp" alt="Perplexity">
             </a>
           </div>
 
@@ -70,6 +85,28 @@ layout: default
             Clicking any tool will <b>automatically copy the prompt</b>.
           </p>
         </div>
+
+        <script>
+          (function () {
+            const pageUrl = "{{ site.url }}{{ page.url }}";
+
+            const promptText =
+`Summarize this blog post in 100 words.
+
+URL: ${pageUrl}
+
+Keep it beginner-friendly and actionable.`;
+
+            const toolButtons = document.querySelectorAll(".ai-tool");
+            toolButtons.forEach((btn) => {
+              btn.addEventListener("click", async () => {
+                try {
+                  await navigator.clipboard.writeText(promptText);
+                } catch (e) {}
+              });
+            });
+          })();
+        </script>
       {% endif %}
 
     </div>
@@ -85,21 +122,7 @@ layout: default
 
   </header>
 
-  <!-- ================================
-       Table of Contents (ADD THIS)
-       ================================ -->
-  <nav class="toc-wrapper" aria-label="Table of contents">
-    <button class="toc-toggle open" type="button">
-      Table of Contents
-      <span class="toc-arrow">▾</span>
-    </button>
-
-    <ul class="toc-list open" id="toc"></ul>
-  </nav>
-
-  <!-- ================================
-       Blog Content (ONLY ONCE)
-       ================================ -->
+  <!-- ✅ Post content -->
   <section class="post-content">
     {{ content }}
   </section>
@@ -110,16 +133,17 @@ layout: default
       <p>{{ page.cta_text | default: "Explore more experiments, frameworks, and actionable SEO learning." }}</p>
 
       {% if page.cta_link and page.cta_button %}
-        <a class="btn primary" href="{{ site.baseurl }}{{ page.cta_link }}">
-          {{ page.cta_button }}
-        </a>
+        <a class="btn primary" href="{{ site.baseurl }}{{ page.cta_link }}">{{ page.cta_button }}</a>
       {% endif %}
     </section>
   {% endif %}
 
-  <!-- ================================
-       TOC JavaScript
-       ================================ -->
+    <!-- Post content -->
+  <section class="post-content">
+    {{ content }}
+  </section>
+
+  <!-- Table of Contents JS -->
   <script src="{{ site.baseurl }}/assets/js/toc.js"></script>
 
 </article>
