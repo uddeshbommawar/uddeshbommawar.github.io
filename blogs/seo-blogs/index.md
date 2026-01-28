@@ -18,7 +18,7 @@ breadcrumb_label: SEO Blogs
 
         <div class="featured-image">
           <img
-            src="{{ site.baseurl }}/assets/images/blog banners/SEO Guide.png"
+            src="{{ site.baseurl }}/assets/images/blog-banners/seo-guide.png"
             alt="Search Engine Optimization (SEO) Starter Guide">
         </div>
 
